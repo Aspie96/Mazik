@@ -34,6 +34,6 @@ app.post('/save', bodyParser.text(), async function(req, res) {
 	}
 });
 
-app.listen(process.env.PORT, process.env.IP () => {
+app.listen(process.env.PORT, process.env.IP, () => {
 	console.log("Example app listening at http://localhost:${port}")
 })
