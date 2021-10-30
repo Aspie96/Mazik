@@ -28,4 +28,4 @@ jobs:
         env:
           SSH_PASSWORD: ${{ secrets.SshPassword }}
         run: |
-          git push mazik:"$SSH_PASSWORD"@ssh-mazik.alwaysdata.net:~/project.git production
+          git push mazik:@ssh-mazik.alwaysdata.net:~/project.git production <<< "$SSH_PASSWORD"
