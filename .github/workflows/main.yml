@@ -26,6 +26,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Alwaysdata deploy
         env:
-          SSH_PASSWORD: ${{ secrets.SSHPassword }}
+          SSH_PASSWORD: ${{ secrets.SshPassword }}
         run: |
           git push mazik:"$SSH_PASSWORD"@ssh-mazik.alwaysdata.net:~/project.git production
